@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+
+    <title>About Us - Booklisty</title>
+    <style>
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 100px;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .about-image {
+            flex: 0 0 450px;
+            margin-right: 40px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .mission-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .mission-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ff5100;
+        }
+
+        .mission-text {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .quote-section {
+            padding: 40px 0;
+            text-align: center;
+            background-color: #eae2d5;
+        }
+
+        .quote-text {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .quote-author {
+            font-size: 18px;
+        }
+
+        @media (max-width: 34em) {
+            .about {
+                display: flex;
+                align-items: center;
+                margin-top: 0px;
+                flex-direction: column-reverse;
+            }
+
+            .about-image {
+                flex: 0 0 251px;
+            }
+
+            .about-content {
+                display: flex;
+                align-items: center;
+                margin-top: 40px;
+                flex-direction: column-reverse;
+            }
+
+            #container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 40px 20px;
+                background-color: #fff;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img class="logo" alt="Booklistify logo" id="logo" src="img/logo-no-background.png" />
+        </a>
+
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link list-link" href="list.html">Books</a></li>
+                <li>
+                    <a class="main-nav-link testimonials-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="main-nav-link about-link" href="about.html">About</a></li>
+                <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+    </header>
+
+    <div id="container">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="img/about.jpeg" alt="About Us Image">
+            </div>
+            <div class="about-text">
+                <h2>Welcome to Booklisty</h2>
+                <p>At Booklisty, we're passionate about connecting readers with their next great book. Whether you're an
+                    avid reader or just starting your reading journey, we have a wide selection of books to suit your
+                    interests.</p>
+                <p>Our mission is to provide a platform where book lovers can discover new titles, explore various
+                    genres, and make informed choices. We believe that books have the power to inspire, educate, and
+                    entertain, and we're dedicated to bringing the joy of reading to people around the world.</p>
+                <p>Explore our collection, find your next favorite read, and embark on literary adventures with
+                    Booklisty!</p>
+            </div>
+        </div>
+
+        <div class="mission-section">
+            <h2>Our Mission</h2>
+            <p class="mission-text">We are on a mission to ignite the love for reading and empower individuals to
+                explore new worlds through the pages of a book. Our goal is to create a platform that fosters a vibrant
+                community of book enthusiasts, where everyone can find stories that resonate with their hearts and
+                minds.</p>
+        </div>
+
+        <div class="quote-section">
+            <h2 class="quote-text">"Books are a uniquely portable magic."</h2>
+            <p class="quote-author">― Stephen King</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container grid grid--footer">
+            <div class="logo-col">
+                <a href="#" class="footer-logo">
+                    <img class="logo" alt="Booklistify logo" src="img/logo-no-background.png" />
+                </a>
+
+                <ul class="social-links">
+                    <li>
+                        <a class="footer-link" href="#"><ion-icon class="social-icon"
+                                name="logo-instagram"></ion-icon></a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#"><ion-icon class="social-icon"
+                                name="logo-facebook"></ion-icon></a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#"><ion-icon class="social-icon"
+                                name="logo-twitter"></ion-icon></a>
+                    </li>
+                </ul>
+
+                <p class="copyright">
+                    Copyright &copy; <span class="year">2027</span> by Booklistify, Inc.
+                    All rights reserved.
+                </p>
+            </div>
+
+            <div class="address-col">
+                <p class="footer-heading">Contact us</p>
+                <address class="contacts">
+                    <p class="address">
+                        623 Harrison St., 2nd Floor, San Francisco, CA 94107
+                    </p>
+                    <p>
+                        <a class="footer-link" href="tel:415-201-6370">415-201-6370</a><br />
+                        <a class="footer-link" href="mailto:hello@booklistify.com">hello@booklistify.com</a>
+                    </p>
+                </address>
+            </div>
+
+            <nav class="nav-col">
+                <p class="footer-heading">Account</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Create account</a></li>
+                    <li><a class="footer-link" href="#">Sign in</a></li>
+                    <li><a class="footer-link" href="#">iOS app</a></li>
+                    <li><a class="footer-link" href="#">Android app</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-col">
+                <p class="footer-heading">Company</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">About Booklistify</a></li>
+                    <li><a class="footer-link" href="#">For Business</a></li>
+                    <li><a class="footer-link" href="#">Authors</a></li>
+                    <li><a class="footer-link" href="#">Careers</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-col">
+                <p class="footer-heading">Resources</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Bookshelf of Stories </a></li>
+                    <li><a class="footer-link" href="#">Help center</a></li>
+                    <li><a class="footer-link" href="#">Privacy & terms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>

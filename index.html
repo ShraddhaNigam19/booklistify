@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Always include this line of code!!! -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="img/android-chrome-512x512.png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script defer src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <title>BookListify &mdash; Empowering Your Reading Journey, One Book at a Time!</title>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">
+      <img class="logo" alt="Booklistify logo" id="logo" src="img/logo-no-background.png" />
+    </a>
+
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link list-link" href="list.html">Books</a></li>
+        <li>
+          <a class="main-nav-link testimonials-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+        <li><a class="main-nav-link about-link" href="about.html">About</a></li>
+        <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+  </header>
+  <main>
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">
+            Buy your textbooks for the best price
+          </h1>
+          <p class="hero-description">
+            Discover a seamless way to extract the utmost value from your textbooks through our platform, where buying
+            and selling
+            converge for the best prices.
+            Experience a
+            smart and efficient solution that empowers you to buy and sell with confidence, optimizing returns and
+            minimizing hassle
+          </p>
+          <a href="#cta" class="btn btn--full margin-right-sm">Get Start Now</a>
+
+          <a href="#books" class="btn btn--outline">View products &darr;</a>
+          <div class="delivered-books">
+            <div class="delivered-imgs">
+              <img src="img/customers/customer-1.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-2.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-3.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-4.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-5.jpg" alt="Customer photo" />
+              <img src="img/customers/customer-6.jpg" alt="Customer photo" />
+            </div>
+            <p class="delivered-text">
+              <span>250,000+</span> books delivered last year!
+            </p>
+          </div>
+        </div>
+        <div class="hero-img-box ">
+          <picture>
+            <img src="img/hero.webp" class="hero-img hero-img-1" alt="Collection of Books" />
+            <img src="img/hero.jpeg" class="hero-img hero-img-2" alt="Collection of Books" />
+            <img src="img/library-dark-0.jpg" class="hero-img hero-img-3" alt="Collection of Books" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-featured">
+      <div class="container">
+        <h2 class="heading-featured-in">As featured in</h2>
+        <div class="logos">
+          <img src="img/logos/techcrunch.png" alt="Techcrunch logo" />
+          <img src="img/logos/business-insider.png" alt="Business Insider logo" />
+          <img src="img/logos/the-new-york-times.png" alt="The New York Times logo" />
+          <img src="img/logos/forbes.png" alt="Forbes logo" />
+          <img src="img/logos/usa-today.png" alt="USA Today logo" />
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-books" id="books">
+      <div class="container center-text">
+        <span class="subheading">Best Sellers</span>
+        <h2 class="heading-secondary">
+          BookListify: Where You'll Find 5,000+ Amazing Stories!
+        </h2>
+      </div>
+
+      <div class="container grid grid--3-cols margin-bottom-md ">
+        <div class="book">
+          <div class=" books-best-seller">
+            <img src="img/app/book-2.jpg" class="book-img" alt="Japanese Gyozas" />
+          </div>
+          <div class="book-content">
+            <div class="book-tags">
+              <span class="tag tag--mystery">Mystery</span>
+            </div>
+            <p class="book-title">The Adventures of Sherlock Holmes</p>
+            <ul class="book-attributes">
+              <li class="book-attribute">
+                <ion-icon class="book-icon" name="book-outline"></ion-icon>
+                <span><strong>Sir Arthur Conan Doyle</strong></span>
+              </li>
+              <li class="book-attribute">
+                <ion-icon class="book-icon" name="hourglass-outline"></ion-icon>
+                <span><strong>8 to 10 hours to read</strong></span>
+              </li>
+              <li class="book-attribute">
+                <ion-icon class="book-icon" name="star-outline"></ion-icon>
+                <span><strong>4.9</strong> rating (537)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="book">
+          <div class="books-best-seller">
+            <img src="img/app/book-1.jpg" class="book-img" alt="Avocado Salad" />
+          </div>
+          <div class="book-content">
+            <div class="book-tags">
+              <span class="tag tag--fantasy">Fantasy</span>
+              <span class="tag tag--romance">Romance</span>
+            </div>
+            <p class="book-title">The Night Circus</p>
+            <ul class="book-attributes">
+              <li class="book-attribute">
+                <ion-icon class="book-icon" name="book-outline"></ion-icon>
+                <span><strong>Erin Morgenstern</strong></span>
+              </li>
+              <li class="book-attribute">
+                <ion-icon class="book-icon" name="hourglass-outline"></ion-icon>
+                <span><strong>10 to 12 hours to read</strong></span>
+              </li>
+              <li class="book-attribute">
+                <ion-icon class="book-icon" name="star-outline"></ion-icon>
+                <span><strong>4.8</strong> rating (441)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+
+        <div class="category">
+          <h3 class="heading-tertiary">Fits Every Reading Preference:</h3>
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Mystery</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Fantasy</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Romance</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Science Fiction</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Historical Fiction</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Young Adult</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Non-Fiction</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Classics</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Children's</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="popup-close" id="popup-close">&times;</span>
+          <div class="popup-header">
+            <img src="" alt="Book Cover" class="popup-book-img" id="popup-book-img" />
+            <div class="popup-title-info">
+              <h2 class="popup-title" id="popup-title"></h2>
+              <div class="popup-tags" id="popup-tags"></div>
+              <span>
+                <p class="popup-author book-attributes" id="popup-author"></p>
+              </span>
+              <p class="popup-year book-attributes" id="popup-year"></p>
+              <p class="popup-description book-attributes" id="popup-description"></p>
+              <p class="popup-rating book-attributes" id="popup-rating"></p>
+              <p class="popup-reading-time book-attributes" id="popup-reading-time"></p>
+              <!-- <div class="popup-links book-attributes" id="popup-links"></div> -->
+              <button class="btn btn-purchase book-attributes" id="btn-purchase">Purchase Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="container all-recipes">
+        <a href="#" class="link see-all">See all books &rarr;</a>
+      </div>
+    </section>
+
+    <section class="section-testimonials" id="testimonials">
+      <div class="testimonials-container">
+        <span class="subheading">Testimonials</span>
+        <h2 class="heading-secondary">Once you try it, you can't go back</h2>
+
+        <div class="testimonials">
+          <figure class="testimonial">
+            <img class="testimonial-img" alt="Photo of customer Dave Bryson" src="img/customers/dave.jpg" />
+            <blockquote class="testimonial-text">
+              Affordable, Nourishing, and Delightful Reads, All Without the Need to Choose Manually! It Feels Absolutely
+              Enchanting.
+            </blockquote>
+            <p class="testimonial-name">&mdash; Dave Bryson</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" alt="Photo of customer Ben Hadley" src="img/customers/ben.jpg" />
+            <blockquote class="testimonial-text">
+              The Book Selection is Incredibly Spot-On, Picking the Perfect Reads Every Time. It's Wonderful to be Free
+              from Worries
+              About What to Read Next!
+            </blockquote>
+            <p class="testimonial-name">&mdash; Ben Hadley</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" alt="Photo of customer Steve Miller" src="img/customers/steve.jpg" />
+            <blockquote class="testimonial-text">
+              BookListify is a Game Changer! I've Embarked on a New Reading Adventure and with My Busy Schedule, Having
+              Curated
+              Booklists is an Absolute Lifesaver. I Can't Imagine Life Without My Daily Dose of Great Reads Now!
+            </blockquote>
+            <p class="testimonial-name">&mdash; Steve Miller</p>
+          </figure>
+
+          <figure class="testimonial">
+            <img class="testimonial-img" alt="Photo of customer Hannah Smith" src="img/customers/hannah.jpg" />
+            <blockquote class="testimonial-text">
+              I Introduced My Whole Family to BookListify, and It's Liberating. With Thoughtfully Curated Booklists,
+              We're Saving
+              Valuable Time and Exploring Quality Reads Together. Best of All, the Selection is Diverse and
+              Eco-Friendly, Aligning
+              with Our Values.
+            </blockquote>
+            <p class="testimonial-name">&mdash; Hannah Smith</p>
+          </figure>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="img/gallery/absalom-absalom.jpg" alt="Photo of beautifully
+            arranged food" />
+          <!-- <figcaption>Caption</figcaption> -->
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/a-Dolls-house.jpg" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/a-la-recherche-du-temps-perdu.jpg" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/anna-karenina.jpg" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/beloved.jpg" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/berlin-alexanderplatz.jpg" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/blindness.jpg" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/bostan.jpg" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/buddenbrooks.jpg" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/children-of-gebelawi.jpg" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/confessions-of-zeno.jpg" alt="Photo of beautifully
+            arranged food" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/fairy-tales.jpg" alt="Photo of beautifully arranged food" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-pricing pricing-link" id="pricing">
+      <div class="container">
+        <span class="subheading">Pricing</span>
+        <h2 class="heading-secondary heading-price">
+          Exploring Books on a Budget: Affordable Pricing for Your Reading Journey
+
+        </h2>
+      </div>
+
+      <div class="container grid grid--2-cols margin-bottom-md">
+        <div class="pricing-plan pricing-plan--starter">
+          <header class="plan-header">
+            <p class="plan-name">Starter</p>
+            <p class="plan-price"><span>$</span>399</p>
+            <p class="plan-text">per month. That's just $13 per book!</p>
+          </header>
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>1 book per day</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Order from 11am to 9pm</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Delivery is free</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="close-outline"></ion-icon>
+              <span>Cash on delivery</span>
+            </li>
+          </ul>
+          <div class="plan-sing-up">
+            <a href="#" class="btn btn--full">Start Reading</a>
+          </div>
+        </div>
+
+        <div class="pricing-plan pricing-plan--complete">
+          <header class="plan-header">
+            <p class="plan-name">Complete</p>
+            <p class="plan-price"><span>$</span>649</p>
+            <p class="plan-text">per month. That's just $11 per book!</p>
+          </header>
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span><strong>2 books</strong> per day</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Order <strong>24/7</strong></span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Delivery is free</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Unlock Access to the Newest Reads</span>
+            </li>
+          </ul>
+          <div class="plan-sing-up">
+            <a href="#" class="btn btn--full">Start Reading</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container grid">
+        <aside class="plan-details">
+          Prices include all applicable taxes. You can cancel at any time.
+          Both plans include the following:
+        </aside>
+      </div>
+
+      <div class="container grid grid--4-cols">
+        <div class="feature">
+          <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+          <p class="feature-title">Never Stop Reading!
+          </p>
+          <p class="feature-text">
+            Our subscriptions cover 365 days per year, even including major
+            holidays.
+          </p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+          <p class="feature-title">Local and Natural</p>
+          <p class="feature-text">
+            Our authors exclusively craft stories using local, fresh, and natural inspiration.
+          </p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+          <p class="feature-title">No waste</p>
+          <p class="feature-text">
+            All our collaborators utilize reusable packaging for every book delivery.
+
+          </p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+          <p class="feature-title">Pause at Your Pleasure</p>
+          <p class="feature-text">
+            Planning a break? Simply pause your membership, and we'll refund the days you don't use.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cta " id="cta">
+      <div class="container">
+        <div class="cta nav-cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Get 20% off</h2>
+            <p class="cta-text">
+              Captivating, Flavorful, and Effortless Stories Await. Begin Your Literary Journey Today. Flexibility to
+              Pause or Cancel
+              Whenever You Need. And Your First Book Comes as a Special Treat from Us!
+            </p>
+
+            <form class="cta-form" name="sign-up" netlify>
+              <div>
+                <label for="full-name">Full Name</label>
+                <input id="full-name" type="text" placeholder="Shraddha Nigam" name="full-name" required />
+              </div>
+
+              <div>
+                <label for="email">Email address</label>
+                <input id="email" type="email" placeholder="me@example.com" name="email" required />
+              </div>
+
+              <div>
+                <label for="select-where">Where did you hear from us?</label>
+                <select id="select-where" name="select-where" required>
+                  <option value="">Please choose one option:</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">YouTube video</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="ad">Facebook ad</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+
+              <button class="btn btn--form">Sign up now</button>
+
+              <!-- <input type="checkbox" />
+                <input type="number" /> -->
+            </form>
+          </div>
+          <div class="cta-img-box" role="img" aria-label="Woman enjoying food"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <footer class="footer">
+    <div class="container grid grid--footer">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <img class="logo" alt="Booklistify logo" src="img/logo-no-background.png" />
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy; <span class="year">2027</span> by Booklistify, Inc.
+          All rights reserved.
+        </p>
+      </div>
+
+      <div class="address-col">
+        <p class="footer-heading">Contact us</p>
+        <address class="contacts">
+          <p class="address">
+            623 Harrison St., 2nd Floor, San Francisco, CA 94107
+          </p>
+          <p>
+            <a class="footer-link" href="tel:415-201-6370">415-201-6370</a><br />
+            <a class="footer-link" href="mailto:hello@booklistify.com">hello@booklistify.com</a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Account</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Create account</a></li>
+          <li><a class="footer-link" href="#">Sign in</a></li>
+          <li><a class="footer-link" href="#">iOS app</a></li>
+          <li><a class="footer-link" href="#">Android app</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Company</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">About Booklistify</a></li>
+          <li><a class="footer-link" href="#">For Business</a></li>
+          <li><a class="footer-link" href="#">Authors</a></li>
+          <li><a class="footer-link" href="#">Careers</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Resources</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Bookshelf of Stories </a></li>
+          <li><a class="footer-link" href="#">Help center</a></li>
+          <li><a class="footer-link" href="#">Privacy & terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+
+</html>

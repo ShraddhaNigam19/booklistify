@@ -1,0 +1,52 @@
+.main-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.main-container .heading-secondary {
+  font-size: 3.4rem;
+  line-height: 2.2;
+  margin-bottom: 0.6rem;
+  margin-left: 17px;
+  margin-top: 31px;
+}
+.section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.book-card {
+  background-color: #eae2d5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+  margin: 10px;
+  width: 292px;
+  height: 419px;
+}
+
+.book-img {
+  max-height: 290px;
+  /* object-fit: cover; */
+  border-radius: 8px;
+}
+
+.book-title {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.author-name {
+  font-size: 14px;
+  color: #777;
+}
+.book-card .btn-purchase {
+  border: 2px solid #ff5100;
+}
+
+.book-card .btn-purchase:hover {
+  background-color: #4f1900;
+  border: 2px solid #4f1900;
+}

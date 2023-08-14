@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/list.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <title>BookListify &mdash; Empowering Your Reading Journey, One Book at a Time!</title>
+    <style>
+        @media (max-width: 34em) {
+            .heading-secondary {
+                text-align: center;
+            }
+
+            .section {
+                display: grid;
+                grid-template-rows: repeat(4, 1fr);
+                justify-content: center;
+                grid-template-columns: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img class="logo" alt="Booklistify logo" id="logo" src="img/logo-no-background.png" />
+        </a>
+
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link list-link" href="list.html">Books</a></li>
+                <li>
+                    <a class="main-nav-link testimonials-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="main-nav-link about-link" href="about.html">About</a></li>
+                <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+    </header>
+    <main class="main-container">
+        <h2 class="heading-secondary">Trending Books</h2>
+        <div class="section">
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/gallery/a-Dolls-house.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">A Doll's House</h3>
+                        <p class="author-name">Henrik Ibsen</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/gallery/the-recognition-of-shakuntala.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">The Recognition of Shakuntala</h3>
+                        <p class="author-name">Kalidasa</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/gallery/middlemarch.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">MiddleMarch</h3>
+                        <p class="author-name">George Eliot</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/gallery/anna-karenina.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">Anna Karenina</h3>
+                        <p class="author-name">Leo Tolstoy</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+        </div>
+
+        <h2 class="heading-secondary">Popular Books</h2>
+        <div class="section">
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/app/book-1.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">The Night Circus</h3>
+                        <p class="author-name">Erin Morgenstern</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/app/book-2.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">The Adventures of Sherlock Holmes</h3>
+                        <p class="author-name">Sir Arthur Conan Doyle</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/gallery/king-lear.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">Ling Lear</h3>
+                        <p class="author-name">William Shakespeare</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+
+
+                        <img src="img/gallery/beloved.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">Beloved</h3>
+                        <p class="author-name">Toni Morrison</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/gallery/ficciones.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">Ficciones</h3>
+                        <p class="author-name">Jorge Luis Borges</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/gallery/history.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">History</h3>
+                        <p class="author-name">Elsa Morante</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/gallery/hamlet.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">Hamlet</h3>
+                        <p class="author-name">William Shakespeare</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/gallery/buddenbrooks.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">Buddenbrooks</h3>
+                        <p class="author-name">Thomas Mann</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/gallery/confessions-of-zeno.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">The Confessions of Zeno</h3>
+                        <p class="author-name">Italo Svevo</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/gallery/fairy-tales.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">Fairy Tales</h3>
+                        <p class="author-name">Hans Christian Andersen</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/gallery/dead-souls.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">Dead Souls</h3>
+                        <p class="author-name">Nikolai Gogol</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+            <div class="books-container">
+                <div class="row">
+                    <div class="book-card">
+                        <img src="img/gallery/gullivers-travels.jpg" alt="Book Cover" class="book-img">
+                        <h3 class="book-title">Gullivers Travels</h3>
+                        <p class="author-name">Lemuel Gulliver</p>
+                        <button class="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+                <!-- Repeat for other trending books -->
+            </div>
+        </div>
+
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="popup-close" id="popup-close">&times;</span>
+                <div class="popup-header">
+                    <img src="" alt="Book Cover" class="popup-book-img" id="popup-book-img" />
+                    <div class="popup-title-info">
+                        <h2 class="popup-title" id="popup-title"></h2>
+                        <div class="popup-tags" id="popup-tags"></div>
+                        <span>
+                            <p class="popup-author book-attributes" id="popup-author"></p>
+                        </span>
+                        <p class="popup-year book-attributes" id="popup-year"></p>
+                        <p class="popup-description book-attributes" id="popup-description"></p>
+                        <p class="popup-rating book-attributes" id="popup-rating"></p>
+                        <p class="popup-reading-time book-attributes" id="popup-reading-time"></p>
+                        <button class="btn btn-purchase book-attributes" id="btn-purchase">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container grid grid--footer">
+            <div class="logo-col">
+                <a href="#" class="footer-logo">
+                    <img class="logo" alt="Booklistify logo" src="img/logo-no-background.png" />
+                </a>
+
+                <ul class="social-links">
+                    <li>
+                        <a class="footer-link" href="#"><ion-icon class="social-icon"
+                                name="logo-instagram"></ion-icon></a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#"><ion-icon class="social-icon"
+                                name="logo-facebook"></ion-icon></a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#"><ion-icon class="social-icon"
+                                name="logo-twitter"></ion-icon></a>
+                    </li>
+                </ul>
+
+                <p class="copyright">
+                    Copyright &copy; <span class="year">2027</span> by Booklistify, Inc.
+                    All rights reserved.
+                </p>
+            </div>
+
+            <div class="address-col">
+                <p class="footer-heading">Contact us</p>
+                <address class="contacts">
+                    <p class="address">
+                        623 Harrison St., 2nd Floor, San Francisco, CA 94107
+                    </p>
+                    <p>
+                        <a class="footer-link" href="tel:415-201-6370">415-201-6370</a><br />
+                        <a class="footer-link" href="mailto:hello@booklistify.com">hello@booklistify.com</a>
+                    </p>
+                </address>
+            </div>
+
+            <nav class="nav-col">
+                <p class="footer-heading">Account</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Create account</a></li>
+                    <li><a class="footer-link" href="#">Sign in</a></li>
+                    <li><a class="footer-link" href="#">iOS app</a></li>
+                    <li><a class="footer-link" href="#">Android app</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-col">
+                <p class="footer-heading">Company</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">About Booklistify</a></li>
+                    <li><a class="footer-link" href="#">For Business</a></li>
+                    <li><a class="footer-link" href="#">Authors</a></li>
+                    <li><a class="footer-link" href="#">Careers</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav-col">
+                <p class="footer-heading">Resources</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Bookshelf of Stories </a></li>
+                    <li><a class="footer-link" href="#">Help center</a></li>
+                    <li><a class="footer-link" href="#">Privacy & terms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>
